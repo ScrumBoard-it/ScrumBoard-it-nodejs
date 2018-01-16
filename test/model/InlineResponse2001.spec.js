@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ScrumBoardIt.BoardApi();
+    instance = new ScrumBoardIt.InlineResponse2001();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,25 @@
       object[property] = value;
   }
 
-  describe('BoardApi', function() {
-    describe('getBoardById', function() {
-      it('should call getBoardById successfully', function(done) {
-        //uncomment below and update the code to test getBoardById
-        //instance.getBoardById(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('InlineResponse2001', function() {
+    it('should create an instance of InlineResponse2001', function() {
+      // uncomment below and update the code to test InlineResponse2001
+      //var instane = new ScrumBoardIt.InlineResponse2001();
+      //expect(instance).to.be.a(ScrumBoardIt.InlineResponse2001);
     });
-    describe('getBoards', function() {
-      it('should call getBoards successfully', function(done) {
-        //uncomment below and update the code to test getBoards
-        //instance.getBoards(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property provider (base name: "provider")', function() {
+      // uncomment below and update the code to test the property provider
+      //var instane = new ScrumBoardIt.InlineResponse2001();
+      //expect(instance).to.be();
     });
-    describe('getTasksByBoardId', function() {
-      it('should call getTasksByBoardId successfully', function(done) {
-        //uncomment below and update the code to test getTasksByBoardId
-        //instance.getTasksByBoardId(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property board (base name: "board")', function() {
+      // uncomment below and update the code to test the property board
+      //var instane = new ScrumBoardIt.InlineResponse2001();
+      //expect(instance).to.be();
     });
+
   });
 
 }));

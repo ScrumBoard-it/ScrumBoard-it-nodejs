@@ -11,13 +11,13 @@ Method | HTTP request | Description
 
 <a name="getBoardById"></a>
 # **getBoardById**
-> JSON getBoardById(boardId)
+> InlineResponse2001 getBoardById(boardId)
 
 Find board by ID
 
 ### Example
 ```javascript
-var ScrumBoardIt = require('scrumboard-it-client');
+var ScrumBoardIt = require('scrum_board_it');
 var defaultClient = ScrumBoardIt.ApiClient.instance;
 
 // Configure API key authorization: Bearer
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-JSON
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -62,13 +62,13 @@ JSON
 
 <a name="getBoards"></a>
 # **getBoards**
-> JSON getBoards()
+> InlineResponse200 getBoards()
 
 List all accessible boards
 
 ### Example
 ```javascript
-var ScrumBoardIt = require('scrumboard-it-client');
+var ScrumBoardIt = require('scrum_board_it');
 var defaultClient = ScrumBoardIt.ApiClient.instance;
 
 // Configure API key authorization: Bearer
@@ -94,7 +94,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-JSON
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -107,13 +107,13 @@ JSON
 
 <a name="getTasksByBoardId"></a>
 # **getTasksByBoardId**
-> JSON getTasksByBoardId(boardId)
+> InlineResponse2002 getTasksByBoardId(boardId)
 
 List all tasks of a board
 
 ### Example
 ```javascript
-var ScrumBoardIt = require('scrumboard-it-client');
+var ScrumBoardIt = require('scrum_board_it');
 var defaultClient = ScrumBoardIt.ApiClient.instance;
 
 // Configure API key authorization: Bearer
@@ -145,7 +145,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-JSON
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
