@@ -26,7 +26,7 @@
     if (!root.ScrumBoardIt) {
       root.ScrumBoardIt = {};
     }
-    root.ScrumBoardIt.Board = factory(root.ScrumBoardIt.ApiClient);
+    root.ScrumBoardIt.InlineResponse2003 = factory(root.ScrumBoardIt.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -35,53 +35,45 @@
 
 
   /**
-   * The Board model module.
-   * @module model/Board
+   * The InlineResponse2003 model module.
+   * @module model/InlineResponse2003
    * @version 0.2.0
    */
 
   /**
-   * Constructs a new <code>Board</code>.
-   * @alias module:model/Board
+   * Constructs a new <code>InlineResponse2003</code>.
+   * @alias module:model/InlineResponse2003
    * @class
-   * @param name {String} 
+   * @param clientId {String} 
    */
-  var exports = function(name) {
+  var exports = function(clientId) {
     var _this = this;
 
-
-    _this['name'] = name;
+    _this['client_id'] = clientId;
   };
 
   /**
-   * Constructs a <code>Board</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>InlineResponse2003</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/Board} obj Optional instance to populate.
-   * @return {module:model/Board} The populated <code>Board</code> instance.
+   * @param {module:model/InlineResponse2003} obj Optional instance to populate.
+   * @return {module:model/InlineResponse2003} The populated <code>InlineResponse2003</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('id')) {
-        obj['id'] = ApiClient.convertToType(data['id'], 'String');
-      }
-      if (data.hasOwnProperty('name')) {
-        obj['name'] = ApiClient.convertToType(data['name'], 'String');
+      if (data.hasOwnProperty('client_id')) {
+        obj['client_id'] = ApiClient.convertToType(data['client_id'], 'String');
       }
     }
     return obj;
   }
 
   /**
-   * @member {String} id
+   * @member {String} client_id
    */
-  exports.prototype['id'] = undefined;
-  /**
-   * @member {String} name
-   */
-  exports.prototype['name'] = undefined;
+  exports.prototype['client_id'] = undefined;
 
 
 

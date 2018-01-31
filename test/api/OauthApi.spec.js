@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ScrumBoardIt.BoardApi();
+    instance = new ScrumBoardIt.OauthApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,21 @@
       object[property] = value;
   }
 
-  describe('BoardApi', function() {
-    describe('getBoardById', function() {
-      it('should call getBoardById successfully', function(done) {
-        //uncomment below and update the code to test getBoardById
-        //instance.getBoardById(function(error) {
+  describe('OauthApi', function() {
+    describe('getAuthorizationConfig', function() {
+      it('should call getAuthorizationConfig successfully', function(done) {
+        //uncomment below and update the code to test getAuthorizationConfig
+        //instance.getAuthorizationConfig(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('getBoards', function() {
-      it('should call getBoards successfully', function(done) {
-        //uncomment below and update the code to test getBoards
-        //instance.getBoards(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('getTasksByBoardId', function() {
-      it('should call getTasksByBoardId successfully', function(done) {
-        //uncomment below and update the code to test getTasksByBoardId
-        //instance.getTasksByBoardId(function(error) {
+    describe('getAuthorizationToken', function() {
+      it('should call getAuthorizationToken successfully', function(done) {
+        //uncomment below and update the code to test getAuthorizationToken
+        //instance.getAuthorizationToken(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

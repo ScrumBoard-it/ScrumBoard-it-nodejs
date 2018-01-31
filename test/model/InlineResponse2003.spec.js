@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ScrumBoardIt.BoardApi();
+    instance = new ScrumBoardIt.InlineResponse2003();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,19 @@
       object[property] = value;
   }
 
-  describe('BoardApi', function() {
-    describe('getBoardById', function() {
-      it('should call getBoardById successfully', function(done) {
-        //uncomment below and update the code to test getBoardById
-        //instance.getBoardById(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('InlineResponse2003', function() {
+    it('should create an instance of InlineResponse2003', function() {
+      // uncomment below and update the code to test InlineResponse2003
+      //var instane = new ScrumBoardIt.InlineResponse2003();
+      //expect(instance).to.be.a(ScrumBoardIt.InlineResponse2003);
     });
-    describe('getBoards', function() {
-      it('should call getBoards successfully', function(done) {
-        //uncomment below and update the code to test getBoards
-        //instance.getBoards(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property clientId (base name: "client_id")', function() {
+      // uncomment below and update the code to test the property clientId
+      //var instane = new ScrumBoardIt.InlineResponse2003();
+      //expect(instance).to.be();
     });
-    describe('getTasksByBoardId', function() {
-      it('should call getTasksByBoardId successfully', function(done) {
-        //uncomment below and update the code to test getTasksByBoardId
-        //instance.getTasksByBoardId(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
+
   });
 
 }));

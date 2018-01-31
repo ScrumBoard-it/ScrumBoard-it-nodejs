@@ -17,7 +17,7 @@ Find board by ID
 
 ### Example
 ```javascript
-var ScrumBoardIt = require('scrum_board_it');
+var ScrumBoardIt = require('scrumboard-it-client');
 var defaultClient = ScrumBoardIt.ApiClient.instance;
 
 // Configure API key authorization: Bearer
@@ -30,15 +30,12 @@ var apiInstance = new ScrumBoardIt.BoardApi();
 
 var boardId = "boardId_example"; // String | ID of the board to return
 
+apiInstance.getBoardById(boardId).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
 
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.getBoardById(boardId, callback);
 ```
 
 ### Parameters
@@ -68,7 +65,7 @@ List all accessible boards
 
 ### Example
 ```javascript
-var ScrumBoardIt = require('scrum_board_it');
+var ScrumBoardIt = require('scrumboard-it-client');
 var defaultClient = ScrumBoardIt.ApiClient.instance;
 
 // Configure API key authorization: Bearer
@@ -78,15 +75,12 @@ Bearer.apiKey = 'YOUR API KEY';
 //Bearer.apiKeyPrefix = 'Token';
 
 var apiInstance = new ScrumBoardIt.BoardApi();
+apiInstance.getBoards().then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
 
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.getBoards(callback);
 ```
 
 ### Parameters
@@ -113,7 +107,7 @@ List all tasks of a board
 
 ### Example
 ```javascript
-var ScrumBoardIt = require('scrum_board_it');
+var ScrumBoardIt = require('scrumboard-it-client');
 var defaultClient = ScrumBoardIt.ApiClient.instance;
 
 // Configure API key authorization: Bearer
@@ -126,15 +120,12 @@ var apiInstance = new ScrumBoardIt.BoardApi();
 
 var boardId = "boardId_example"; // String | ID of the board's tasks
 
+apiInstance.getTasksByBoardId(boardId).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
 
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.getTasksByBoardId(boardId, callback);
 ```
 
 ### Parameters

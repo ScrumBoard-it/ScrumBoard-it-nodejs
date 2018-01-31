@@ -3,6 +3,8 @@
 ## Enum
 
 
-* `Github` (value: `"Github"`)
+* `scrumboard-it` (value: `"scrumboard-it"`)
+
+* `github` (value: `"github"`)
 
 
